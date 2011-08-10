@@ -1,0 +1,33 @@
+#boxing
+{
+	padding: 20px;
+	margin:	20px;
+	border: 10px solid #d0d0ff;
+}
+
+table.tab
+{
+	width:100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 13px;
+	font-family: Tahoma;
+	background-color: white;
+}
+
+table.tab tr.head
+{
+	text-align: left;
+}
+
+table.tab tr.total
+{
+	border-top: 2px solid black;
+	font-weight: bold;
+	text-align: left;
+}
+
+table.tab td.mm
+{
+	text-align: center;
+}
