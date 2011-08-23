@@ -36,6 +36,7 @@ div.tab ul li a:hover
 }
 hr.line
 {
+	float: left;
 	width: 98%;
 	position:relative;
 	margin: 0 0;
