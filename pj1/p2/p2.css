@@ -1,32 +1,47 @@
 div.tab
 {
-	width:100%;
 	font-family: Tahoma;
 	font-size: 13px;
 }
-div.tab a
+div.tab ul li
 {
-	color: black;
-	text-decoration:   none;
-	padding: 4px 9px 7px 9px;
+	display: block;
+	float: left;
+	margin: 0 4px;
+	-webkit-border-radius: 3px 3px 0 0;
+	/*background: #fafafa;*/
 	background-image: url(left.gif), url(right.gif), url(mid.gif);
 	background-repeat: no-repeat, no-repeat, repeat;
 	background-position: 0px 0px, 100% 0%, 0% 0%;
+	border-bottom: 2px solid #cccccc;
 }
-div.tab a:hover
+div.tab ul li a
+{
+	display: block;
+	text-decoration:   none;
+	padding: 5px 9px 4px 9px;
+	text-align: center;
+	color: inherit;
+	outline: 0;
+}
+div.tab ul li.selected
+{
+	background-image: url(left-selected.gif), url(right-selected.gif), url(mid-selected.gif);
+	border-bottom: 2px solid #fff;
+	font-weight: bold;
+}
+div.tab ul li a:hover
 {
 	color: #cc6600;
 }
-
-div.tab a:active
-{
-	color: red;
-	font-weight: bold;
-}
-
 hr.line
 {
+	width: 98%;
+	position:relative;
+	margin: 0 0;
+	top: -2px;
+	left: 20px;
 	border: 1px #cccccc solid;
-	vertical-align: top;
+	z-index: -1;
 }
 

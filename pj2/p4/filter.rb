@@ -6,7 +6,6 @@ def filter(arr, h = {}, &b)
   arr.delete_if{|x| x > h[:max]} if !h[:max].nil?
   scale = (h[:scale].nil?) ? 1:h[:scale]
   arr.each do |a|
-	s = 
 	if block_given?
 	  yield a*scale
 	end

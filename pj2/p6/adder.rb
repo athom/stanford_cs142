@@ -21,7 +21,7 @@ class Adder
   end
 
   def method_missing(methodName, *args)
-	Adder.method_missing(methodName, *args)
+	self.class.method_missing(methodName, *args)
 	send(methodName)
   end
 end
