@@ -1,0 +1,7 @@
+<div id = "movimovi" >
+  <ul>
+    <% us.each do |a| %>
+        <%= render(:partial => "omashu", :locals=>{:s => label == a[:label], :label => a[:label]})%>
+    <% end %>
+  </ul>
+</div>

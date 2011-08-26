@@ -1,0 +1,21 @@
+<h1>Listing noamis</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @noamis.each do |noami| %>
+  <tr>
+    <td><%= link_to 'Show', noami %></td>
+    <td><%= link_to 'Edit', edit_noami_path(noami) %></td>
+    <td><%= link_to 'Destroy', noami, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Noami', new_noami_path %>

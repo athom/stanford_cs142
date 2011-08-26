@@ -1,0 +1,17 @@
+<%= form_for(@noami) do |f| %>
+  <% if @noami.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@noami.errors.count, "error") %> prohibited this noami from being saved:</h2>
+
+      <ul>
+      <% @noami.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

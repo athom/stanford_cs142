@@ -1,0 +1,52 @@
+div.tab
+{
+	font-family: Tahoma;
+	font-size: 13px;
+}
+div.tab ul li
+{
+	display: block;
+	float: left;
+	margin: 0 4px;
+	-webkit-border-radius: 3px 3px 0 0;
+	/*background: #fafafa;*/
+	background-image: url(../images/left.gif), url(../images/right.gif), url(../images/mid.gif);
+	background-repeat: no-repeat, no-repeat, repeat;
+	background-position: 0px 0px, 100% 0%, 0% 0%;
+	border-bottom: 2px solid #cccccc;
+}
+div.tab ul li a
+{
+	display: block;
+	text-decoration:   none;
+	padding: 5px 9px 4px 9px;
+	text-align: center;
+	color: inherit;
+	outline: 0;
+}
+div.tab ul li.selected
+{
+	background-image: url(../images/left-selected.gif), url(../images/right-selected.gif), url(../images/mid-selected.gif);
+	border-bottom: 2px solid #fff;
+	font-weight: bold;
+}
+div.tab ul li a:hover
+{
+	color: #cc6600;
+}
+hr.line
+{
+	float: left;
+	width: 98%;
+	position:relative;
+	margin: 0 0;
+	top: -2px;
+	left: 20px;
+	border: 1px #cccccc solid;
+	z-index: -1;
+}
+
+#movimovi
+{
+  color: black;
+}

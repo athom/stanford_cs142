@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pj3</title>
+  <%= stylesheet_link_tag :all, :p2 %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <br/>
+  <p class = "main">Athom's page</p>
+  <hr class = "main"></hr>
+  <div class = "main" >
+    <%= yield %>
+  </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<%if s%>
+<li class = "selected">
+<%else%>
+<li>
+<%end%>
+<%= link_to label, url_for(:controller => "noamis", :action => "create", :ass => @us, :sl => label), :remote => true, :method => :post%>
+</li>
+

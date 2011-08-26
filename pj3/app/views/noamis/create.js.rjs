@@ -1,0 +1,1 @@
+page.replace_html("movimovi", render(:partial => @noami, :locals => {:us => @as, :label=> @selected_label}) )
