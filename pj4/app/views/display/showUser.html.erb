@@ -1,0 +1,12 @@
+<% @photos.each do |p| %>
+  <%= link_to(image_tag(p.file_name), '#')%>
+  <p class = "date">
+    uploaded at 
+    <%= p.date_time %>
+  </p>
+  <% p.comments.each do |c| %>
+    <%= render("comment", :c => c) %>
+  <% end %>
+  <hr/>
+<% end %>
+
