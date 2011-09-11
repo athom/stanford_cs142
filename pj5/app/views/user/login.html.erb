@@ -1,0 +1,25 @@
+<div class="login_form">
+	<%= form_for(@user) do |f| %>
+	  <% if @user.errors.any? %>
+	    <div id="error_explanation">
+	      <ul>
+	      <% @user.errors.full_messages.each do |msg| %>
+	        <li><%= msg %></li>
+	      <% end %>
+	      </ul>
+	    </div>
+	  <% end %>
+	
+	  <fieldset>
+	  	<legend>Enter User Details</legend>
+	  	  <div>
+			<%= f.label :name %>:
+			<%= f.text_field :name, :size => 40 %>
+		  </div>
+		  
+		  <div>
+		    <%= f.submit %>
+		  </div>
+	  </fieldset>
+	<% end %>
+</div>

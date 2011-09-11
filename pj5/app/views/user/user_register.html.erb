@@ -1,0 +1,52 @@
+
+<div class="login_form"> 
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% if flash[:alert] %>
+    <p id="alert"><%= flash[:alert] %></p> 
+  <% end %>
+  <% if flash[:notice] %>
+    <p id="notice"><%= flash[:notice] %></p> 
+  <% end %>
+ 
+  <%= form_tag do %>
+    <fieldset> 
+      <legend>Reister Info </legend> 
+ 
+      <div> 
+        <label for="first_name">First Name:</label> 
+        <%= text_field_tag :first_name, params[:first_name] %>
+      </div> 
+      <div> 
+        <label for="first_name">Last Name:</label> 
+        <%= text_field_tag :last_name, params[:last_name] %>
+      </div> 
+
+      <div> 
+        <label for="username">Username:</label> 
+        <%= text_field_tag :username, params[:username] %>
+      </div> 
+
+      <div> 
+        <label for="passowrd">Password:</label> 
+        <%= password_field_tag :password, params[:password] %>
+      </div> 
+      <div> 
+        <label for="confirm_passowrd">Confirm Password:</label> 
+        <%= password_field_tag :confirm_password, params[:confirm_password] %>
+      </div> 
+ 
+      <div> 
+        <%= submit_tag "Create" %>
+      </div> 
+    </fieldset> 
+  <% end %>
+</div> 

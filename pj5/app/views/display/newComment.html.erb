@@ -1,0 +1,24 @@
+
+<%= image_tag(@photo.file_name)%>
+<div class="comment_form"> 
+  <% if flash[:alert] %>
+    <p id="alert"><%= flash[:alert] %></p> 
+  <% end %>
+  <% if flash[:notice] %>
+    <p id="notice"><%= flash[:notice] %></p> 
+  <% end %>
+ 
+  <%= form_tag(url_for(:action => "newComment", :photo_id => @photo, :user_id => @user)) do %>
+    <fieldset class = "comment_frame"> 
+      <legend><%= @user.last_name + ' Say:' %></legend> 
+ 
+      <div class = "comment_text_areaa" > 
+        <%= text_area_tag :comment, '', :class => "comment_text_area"  %>
+      </div> 
+  
+      <div class = "comment_commit"> 
+        <%= submit_tag "OK"%>
+      </div> 
+    </fieldset> 
+  <% end %>
+</div> 

@@ -1,0 +1,20 @@
+
+<div class="upload_pic_form"> 
+  <% if flash[:alert] %>
+    <p id="alert"><%= flash[:alert] %></p> 
+  <% end %>
+  <% if flash[:notice] %>
+    <p id="notice"><%= flash[:notice] %></p> 
+  <% end %>
+
+  <%= form_tag url_for(:action => "uploadPhoto", :user_id => @user.id), :multipart => true do %>
+    <div class = "choose_photo">
+      <label for="file">File to Upload</label> 
+      <%= file_field_tag "file", :accept => 'image/png,image/gif,image/jpeg'%>
+    </div>
+
+    <div class = "save_photo">
+      <%= submit_tag "Save"%>
+    </div>
+  <% end %>
+</div> 

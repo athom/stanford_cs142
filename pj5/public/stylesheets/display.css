@@ -1,0 +1,103 @@
+
+.main
+{
+  margin: 20px 200px
+}
+
+.date
+{
+  font-size: 8;
+  color: gray;
+  margin-top: 0px;
+}
+
+.comment
+{
+  color: yellow;
+  background-color: gray;
+}
+
+.login_form
+{
+  color: green;
+  font-weight: bold;
+}
+
+.comment_form
+{
+  color: red;
+}
+.comment_frame
+{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 5px 0px 5px;
+}
+.comment_text_area
+{
+  margin: 0px 0px 0px 0px;
+  width: 99%;
+  height: 50px;
+}
+.comment_commit
+{
+  float: right
+}
+
+.upload_pic_form
+{
+  margin: 10px 100px 10px 100px;
+}
+.upload_pic_form  form  .choose_photo
+{
+  /*color: red;*/
+}
+
+
+
+#notice
+{
+  color: green;
+}
+#alert
+{
+  color: red;
+}
+#error_explanation
+{
+  color: red;
+}
+
+#site-eye
+{
+  color: #1987a5;
+  font-weight: bold;
+  font-size: 20;
+  margin: 0px 0px 0px 100px;
+}
+
+ul.sailor li
+{
+  display: block;
+  float: right;
+}
+ul.sailor li a
+{
+  text-decoration: none;
+  position: relative;
+  top: -30px; 
+  left: -100px; 
+}
+
+#site-bar
+{
+
+}
+
+.new_photo
+{
+  /*float: right;*/
+}
+
+.new_photo a
+{
+}
